@@ -1,0 +1,62 @@
+{
+  "projects": {
+    "between-city-mostra": {
+      "position": "21% 89%",
+      "scale": 1.56
+    },
+    "run-to-your-club": {
+      "position": "46% 49%",
+      "scale": 1.13
+    },
+    "milano-twin-towers": {
+      "position": "66% 51%",
+      "scale": 1.23
+    },
+    "reflected-facade": {
+      "position": "50% 50%",
+      "scale": 1.15
+    },
+    "competition-studies": {
+      "position": "50% 50%",
+      "scale": 1.06
+    },
+    "fieldwork-and-making": {
+      "position": "50% 50%",
+      "scale": 1.17
+    }
+  },
+  "competitions": {
+    "oceanic-parliament": {
+      "position": "38% 32%",
+      "scale": 1.21
+    },
+    "florence-hills": {
+      "position": "46% 0%",
+      "scale": 1.46
+    },
+    "field-station": {
+      "position": "49% 3%",
+      "scale": 1.11
+    },
+    "unesco-ancient-theatre": {
+      "position": "48% 21%",
+      "scale": 1.19
+    },
+    "rising-from-ashes": {
+      "position": "73% 62%",
+      "scale": 1.21
+    },
+    "candelo-urban-link": {
+      "position": "49% 45%",
+      "scale": 1.24
+    },
+    "abandoned-airport": {
+      "position": "28% 0%",
+      "scale": 2.13
+    },
+    "karlovo-living-landscape": {
+      "position": "16% 0%",
+      "scale": 1.39
+    }
+  }
+}
