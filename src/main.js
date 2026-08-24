@@ -357,6 +357,15 @@ function researchPage() {
     html`
       <section class="page-intro research-intro section-pad"><p class="eyebrow">${research.eyebrow}</p><h1>${research.heading}</h1></section>
       <section class="research-overview section-pad reveal"><div><p class="eyebrow">${research.period}</p><h2>${research.theme}</h2><p>${research.context}</p></div><p>${research.intro}</p></section>
+      <section class="research-video section-pad reveal">
+        <div class="research-video-copy"><p class="eyebrow">${research.video.eyebrow}</p><h2>${research.video.title}</h2></div>
+        <figure class="research-video-figure">
+          <video controls playsinline preload="metadata" poster="${research.video.poster}" aria-label="${research.video.ariaLabel}">
+            <source src="${research.video.src}" type="${research.video.type}" />
+          </video>
+          <figcaption>${research.video.caption}</figcaption>
+        </figure>
+      </section>
       <section class="research-methods section-pad reveal"><p class="eyebrow">${research.methodsLabel}</p><div class="methods-grid">${methods}</div></section>
       <section class="research-note section-pad reveal"><p class="eyebrow">${research.contextLabel}</p><p>${research.note}</p></section>
     `,

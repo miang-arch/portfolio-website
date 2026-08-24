@@ -157,6 +157,15 @@ export const siteContent = {
     context: "Politecnico di Milano · Thesis-linked development",
     intro:
       "A simulation-based workflow studying single-facade performance under controlled boundary conditions, beginning from a thesis context in Naples. The work examines cooling load, daylight relationships, shading depth, window-to-wall ratio, SHGC, orientation, and cross-climate comparison across Naples, Los Angeles, and Boston.",
+    video: {
+      eyebrow: "Prototype Demonstration",
+      title: "Single-Façade Surrogate Tool",
+      caption: "Recorded walkthrough of the interface, including single predictions, response curves, and CSV batch ranking.",
+      src: "/assets/research/single-facade-surrogate-tool.mp4",
+      poster: "/assets/research/single-facade-surrogate-tool-poster.jpg",
+      type: "video/mp4",
+      ariaLabel: "Recorded demonstration of the Single-Façade Surrogate Tool",
+    },
     methodsLabel: "Methods",
     methods: [
       { number: "01", title: "Simulation", description: "EnergyPlus-based workflows for environmental performance evaluation and parametric studies." },
