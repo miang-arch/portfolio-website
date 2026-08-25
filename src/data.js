@@ -40,14 +40,13 @@ export const siteContent = {
       { label: "Contact", href: "/contact" },
     ],
     footerLinks: [
-      { label: "Full Portfolio", href: "/assets/documents/portfolio.pdf", external: true },
+      { label: "Full Portfolio", href: "/assets/documents/portfolio-jianmian-zhang.pdf", external: true },
       { label: "Email", href: "mailto:Jianmian.zhang@mail.polimi.it" },
     ],
   },
   documents: {
-    portfolio: "/assets/documents/portfolio.pdf",
+    portfolio: "/assets/documents/portfolio-jianmian-zhang.pdf",
     cv: "/assets/documents/resume.pdf",
-    thesis: "/assets/documents/thesis.pdf",
   },
   homepage: {
     title: "Jianmian Zhang — Architectural Designer",
@@ -204,7 +203,7 @@ export const siteContent = {
     role: "Architectural Designer",
     email: "Jianmian.zhang@mail.polimi.it",
     links: [
-      { label: "View Portfolio", href: "/assets/documents/portfolio.pdf" },
+      { label: "View Portfolio", href: "/assets/documents/portfolio-jianmian-zhang.pdf" },
       { label: "View CV", href: "/assets/documents/resume.pdf" },
     ],
     linkedin: { label: "LinkedIn", href: "" },
@@ -229,14 +228,12 @@ export const thesis = {
   pageTitle: "Thesis — Jianmian Zhang",
   description: "Complete thesis by Jianmian Zhang with chapter navigation through the original pages.",
   eyebrow: "Thesis",
-  pdf: "/assets/documents/thesis.pdf",
   pageImageTemplate: "/assets/thesis-pages/page-{page}.jpg",
   pageCount: 254,
   pageAltPrefix: "Thesis original page",
   pagesLabel: "Complete thesis pages",
   navigatorLabel: "Chapter Navigator",
   mobileButtonLabel: "Chapters",
-  openPdfLabel: "Open original PDF",
   chapters: [
     { id: "part-a-background", level: "part", part: "Part A", title: "Background", startPage: 6 },
     { id: "naples-development", level: "subsection", part: "Part A", number: "1", title: "Naples Development", sourcePage: 12, startPage: 7 },

@@ -317,7 +317,6 @@ function thesisPage() {
       <article class="thesis-viewer">
         <header class="thesis-intro section-pad">
           <div><p class="eyebrow">${thesis.eyebrow}</p><h1>${thesis.title}</h1><p>${thesis.subtitle}</p></div>
-          <a class="text-link" href="${thesis.pdf}" target="_blank" rel="noreferrer">${thesis.openPdfLabel} ${externalArrow()}</a>
         </header>
         <div class="thesis-layout section-pad">
           <aside class="thesis-navigation">${thesisNavigator()}</aside>
