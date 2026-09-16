@@ -152,20 +152,43 @@ function projectPage(project) {
     .map(([label, value]) => `<dt>${label}</dt><dd>${value}</dd>`)
     .join("");
   const [firstPage, lastPage] = project.pdfPages;
+  const portfolioPageWidth = 2977;
+  const portfolioPageHeight = 2105;
   const portfolioPages = Array.from({ length: lastPage - firstPage + 1 }, (_, index) => firstPage + index)
-    .map(
-      (page, index) => html`
+    .map((page, index) => {
+      const pageHotspots = (projectDetailContent.pageHotspots?.[page] ?? [])
+        .map(
+          (hotspot) => html`
+            <a
+              class="portfolio-page-hotspot"
+              href="${hotspot.href}"
+              data-link
+              aria-label="${hotspot.ariaLabel}"
+              style="left:${hotspot.left}%;top:${hotspot.top}%;width:${hotspot.width}%;height:${hotspot.height}%"
+            ></a>
+          `,
+        )
+        .join("");
+      return html`
         <figure class="portfolio-pdf-page reveal">
-          <img
-            src="/assets/portfolio-pages/page-${String(page).padStart(2, "0")}.jpg"
-            alt="${project.title}, ${projectDetailContent.portfolioPageLabel} ${page}"
-            loading="${index === 0 ? "eager" : "lazy"}"
-            decoding="async"
-          />
+          <div
+            class="portfolio-page-sheet"
+            style="--portfolio-page-width:${portfolioPageWidth};--portfolio-page-height:${portfolioPageHeight}"
+          >
+            <img
+              src="/assets/portfolio-pages/page-${String(page).padStart(2, "0")}.jpg"
+              alt="${project.title}, ${projectDetailContent.portfolioPageLabel} ${page}"
+              width="${portfolioPageWidth}"
+              height="${portfolioPageHeight}"
+              loading="${index === 0 ? "eager" : "lazy"}"
+              decoding="async"
+            />
+            ${pageHotspots}
+          </div>
           <figcaption>${projectDetailContent.portfolioPageLabel} ${String(page).padStart(2, "0")}</figcaption>
         </figure>
-      `,
-    )
+      `;
+    })
     .join("");
   const currentIndex = projects.indexOf(project);
   const next = projects[(currentIndex + 1) % projects.length];

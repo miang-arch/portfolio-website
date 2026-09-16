@@ -75,6 +75,18 @@ export const siteContent = {
   },
   projectDetail: {
     eyebrowPrefix: "Project",
+    pageHotspots: {
+      3: [
+        {
+          href: "/thesis",
+          ariaLabel: "View full thesis",
+          left: 13.141573,
+          top: 82.016891,
+          width: 7.796061,
+          height: 1.131264,
+        },
+      ],
+    },
     metadataLabels: {
       year: "Year",
       location: "Location",
