@@ -323,11 +323,16 @@ function thesisPage() {
   const pageFigures = Array.from({ length: thesis.pageCount }, (_, index) => index + 1)
     .map((page) => {
       const chapter = chapterByPage.get(page);
+      const pageWidth = page === 1 ? 1191 : 2382;
+      const pageHeight = 1191;
       return html`
         <figure class="thesis-page" ${chapter ? `id="${chapter.id}" data-chapter-id="${chapter.id}"` : ""} data-thesis-page="${page}">
           <img
             src="${thesis.pageImageTemplate.replace("{page}", String(page).padStart(3, "0"))}"
             alt="${thesis.pageAltPrefix} ${page}"
+            width="${pageWidth}"
+            height="${pageHeight}"
+            style="--thesis-page-ratio: ${pageWidth} / ${pageHeight}"
             loading="${page <= 3 ? "eager" : "lazy"}"
             decoding="async"
           />

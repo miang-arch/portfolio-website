@@ -2095,7 +2095,7 @@ body.is-home {
 .thesis-page img {
   width: 100%;
   height: auto;
-  aspect-ratio: 1;
+  aspect-ratio: var(--thesis-page-ratio);
   object-fit: contain;
   background: #fff;
   box-shadow: 0 8px 28px rgba(37, 33, 28, 0.09);
